@@ -2,9 +2,16 @@ import React from 'react'
 import facebook from "../assets/facebook1.png"
 import Image from 'next/image'
 
+import { MdHome } from "react-icons/md";
+import { FiPlayCircle, FiFlag, FiMessageCircle } from "react-icons/fi";
+import { BsCart3 } from "react-icons/bs";
+import { GrGroup, GrAppsRounded } from "react-icons/gr";
+import { FaBell } from "react-icons/fa";
+import { AiOutlineMessage } from "react-icons/ai";
+
 const Header = () => {
   return (
-    <div className='p-3'>
+    <div className='p-3 flex items-center justify-between'>
         {/* LeftSide */}
         <div className='flex items-center'>
             <div className='w-12 h-12'>
@@ -16,7 +23,13 @@ const Header = () => {
             </div>
         </div>
         {/* Middle */}
-
+        <div className='flex items-center space-x-4 '>
+          <MdHome className='w-9 h-9'/>
+          <FiFlag className='w-7 h-7'/>
+          <FiPlayCircle className='w-7 h-7'/>
+          <BsCart3 className='w-7 h-7'/>
+          <GrGroup className='w-7 h-7'/>
+        </div>
         {/* RightSide */}
     </div>
   )
