@@ -8,6 +8,7 @@ import { BsCart3 } from "react-icons/bs";
 import { GrGroup, GrAppsRounded } from "react-icons/gr";
 import { FaBell } from "react-icons/fa";
 import { AiOutlineMessage } from "react-icons/ai";
+import user from "../assets/jack.jpg";
 
 const Header = () => {
   return (
@@ -31,6 +32,14 @@ const Header = () => {
           <GrGroup className='w-7 h-7'/>
         </div>
         {/* RightSide */}
+        <div className='flex items-center space-x-6'>
+          <GrAppsRounded className='w-7 h-7'/>
+          <FaBell className='w-7 h-7'/>
+          <AiOutlineMessage className='w-7 h-7'/>
+          <div className='w-10 h-10'>
+            <Image src={user} className='rounded-full' />
+          </div>
+        </div>
     </div>
   )
 }
