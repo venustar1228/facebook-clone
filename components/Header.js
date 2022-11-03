@@ -12,15 +12,15 @@ import user from "../assets/jack.jpg";
 
 const Header = () => {
   return (
-    <div className='p-3 flex items-center justify-between'>
+    <div className='p-3 flex items-center justify-between border-b'>
         {/* LeftSide */}
-        <div className='flex items-center'>
+        <div className='flex items-center mr-4'>
             <div className='w-12 h-12'>
                 <Image src={facebook} />
             </div>
             <div className='ml-2'>
               <input type="text" placeholder="Search Facebook" 
-                className='outline-0 bg-[#f2f3f7] p-3 rounded-full pl-4'/>
+                className='outline-0 bg-[#f2f3f7] p-3 rounded-full pl-4 hidden sm:block'/>
             </div>
         </div>
         {/* Middle */}
@@ -33,9 +33,11 @@ const Header = () => {
         </div>
         {/* RightSide */}
         <div className='flex items-center space-x-6'>
-          <GrAppsRounded className='w-7 h-7'/>
-          <FaBell className='w-7 h-7'/>
-          <AiOutlineMessage className='w-7 h-7'/>
+          <div className='md:flex space-x-6 hidden'>
+            <GrAppsRounded className='w-7 h-7'/>
+            <FaBell className='w-7 h-7'/>
+            <AiOutlineMessage className='w-7 h-7'/>
+          </div>
           <div className='w-10 h-10'>
             <Image src={user} className='rounded-full' />
           </div>
