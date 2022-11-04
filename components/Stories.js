@@ -22,7 +22,7 @@ function Stories() {
     ];  
   return (
     <div className='w-screen sm:w-full h-44 flex items-center mt-4'>
-        <div className='flex space-x-1 p-4 mx-auto max-w-[24rem] justify-between bg-white rounded-[1rem]'>
+        <div className='flex space-x-2 p-4 mx-auto max-w-[24rem] justify-between bg-white rounded-[1rem]'>
             {storeis.map((story) => (
                 <div className='relative flex bg-red-300 w-[4.5rem] h-32 sm:w-24 sm:h-40 rounded-[1rem]'>
                     <div className='flex'>
