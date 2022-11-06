@@ -2,8 +2,8 @@ import React from 'react'
 import CreatePost from './CreatePost'
 import LeftSideBar from './LeftSideBar'
 import Posts from './Posts'
+import RightSidebar from './RightSidebar'
 import Stories from './Stories'
-
 
 function Feed() {
   return (
@@ -18,7 +18,8 @@ function Feed() {
           {/* Posts */}
           <Posts />
         </div>
-        {/* RightSideBar */}
+        {/* RightSidebar*/}
+        <RightSidebar />
     </div>
   )
 }
